@@ -233,6 +233,7 @@ public class ThermalSettingsFragment extends PreferenceFragment
         private final int[] items = {
                 R.string.thermal_default,
                 R.string.thermal_dialer,
+                R.string.thermal_camera,
                 R.string.thermal_gaming,
         };
 
@@ -306,12 +307,15 @@ public class ThermalSettingsFragment extends PreferenceFragment
 
         @Override
         public void onBindViewHolder(ViewHolder holder, int position) {
+            Context context = holder.itemView.getContext();    
             ApplicationsState.AppEntry entry = mEntries.get(position);
 
             if (entry == null) {
                 return;
             }
 
+            holder.mode.setAdapter(new ModeAdapter(context));
+            holder.mode.setOnItemSelectedListener(this);    
             holder.title.setText(entry.label);
             holder.title.setOnClickListener(v -> holder.mode.performClick());
             mApplicationsState.ensureIcon(entry);
