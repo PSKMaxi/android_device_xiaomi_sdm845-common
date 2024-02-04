@@ -125,7 +125,7 @@ debug.sf.disable_client_composition_cache=1
 debug.sf.predict_hwc_composition_strategy=0
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
-ro.hwui.render_ahead=20
+ro.hwui.render_ahead=10
 
 # DPM
 persist.vendor.dpm.idletimer.mode=default
