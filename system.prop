@@ -10,6 +10,7 @@ ro.bluetooth.a2dp_offload.supported=true
 
 # Bluetooth
 persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
 
 # Camera
 camera.disable_zsl_mode=true
