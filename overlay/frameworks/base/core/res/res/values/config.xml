@@ -36,6 +36,9 @@
          Used to decide if we show pulse settings -->
     <bool name="config_ledCanPulse">true</bool>
 
+    <!-- Flag indicating whether we should enable smart battery. -->
+    <bool name="config_smart_battery_available">true</bool>
+
     <!-- Enables or disables fading edges when marquee is enabled in TextView.
          Off by default, since the framebuffer readback used to implement the
          fading edges is prohibitively expensive on most GPUs. -->
