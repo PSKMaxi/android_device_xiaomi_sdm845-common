@@ -66,6 +66,9 @@ sdm.debug.disable_inline_rotator=1
 sdm.debug.disable_inline_rotator_secure=1
 ro.sf.lcd_density=404
 
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
 # IMS
 persist.vendor.ims.disableUserAgent=0
 
